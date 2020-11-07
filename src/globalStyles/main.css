@@ -1,0 +1,69 @@
+body {
+  background-color: rgb(243, 240, 240);
+}
+
+.navbar {
+  background-color: rgb(58, 58, 58);
+  border-bottom-style: solid;
+  border-bottom-width: 1.7;
+  border-bottom-color: orange;
+}
+.navbarLink {
+  color: white;
+}
+
+.navbarLink:hover {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.jumbotron {
+  background-color: #4a4a4a;
+  margin-top: 2rem;
+  color: white;
+  border-style: solid;
+  border-color: orange;
+  border-radius: 5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.jumbotron h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.jumbotron p {
+  font-size: 1.1rem;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.col {
+  background-color: #4a4a4a;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  border-style: solid;
+  border-color: orange;
+}
+
+.card {
+  background-color: #e4e4e4;
+  height: 100%;
+}
+
+.cardImg {
+  max-height: 45%;
+}
+
+.homePageLink {
+  color: white;
+  text-decoration: underline;
+}
+
+.homePageLink:hover {
+  color: rgb(227, 229, 230);
+}
