@@ -34,7 +34,8 @@ export default function Home({ location }) {
   let stripePromise
   const getStripe = () => {
     if (!stripePromise) {
-      stripePromise = loadStripe(process.env.STRIPE_PUBLISHABLE_KEY)
+     // stripePromise = loadStripe(process.env.STRIPE_PUBLISHABLE_KEY)
+     stripePromise = loadStripe("pk_test_51HjkoeGyQCuilANZtIwOicVLWKtEKGTeDq1YISWnmd1d2MIdUqxLLWkmAkgsYCsPT12ExruGRLCEWQ8XgaSNrtut00egD3xTxQ")
     }
     return stripePromise
   }
