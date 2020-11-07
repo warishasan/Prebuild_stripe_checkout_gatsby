@@ -1,4 +1,4 @@
-const stripe = require("stripe")("sk_test_51HjkoeGyQCuilANZiPvgbm3t4lZp3KAOZ3WwuAfUA9lI8Ip0wejqNyJqpIVEXv9puSOXGr5KOnzlooAS7hCL4NSg00Q6xhIG5W")//(process.env.STRIPE_SECRET_KEY)
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY)
 exports.handler = async (event, context) => {
   let reqObj = JSON.parse(event.body)
 
