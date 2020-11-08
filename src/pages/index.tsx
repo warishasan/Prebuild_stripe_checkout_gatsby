@@ -9,6 +9,17 @@ import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
 import Jumbotron from "react-bootstrap/Jumbotron"
 
+
+
+let stripePromise
+const getStripe = () => {
+  if (!stripePromise) {
+    stripePromise = loadStripe(process.env.GATSBY_STRIPE_PUBLISHABLE_KEY)
+  }
+  return stripePromise
+}
+
+
 export default function Home({ location }) {
   const staticData = useStaticQuery(graphql`
     query {
@@ -31,13 +42,6 @@ export default function Home({ location }) {
     }
   `)
 
-  let stripePromise
-  const getStripe = () => {
-    if (!stripePromise) {
-      stripePromise = loadStripe(process.env.GATSBY_STRIPE_PUBLISHABLE_KEY)
-    }
-    return stripePromise
-  }
 
   console.log(location)
 
